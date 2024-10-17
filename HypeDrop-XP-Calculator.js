@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         HypeDrop XP Calculator
-// @namespace    HypeDrop XP Calculator
+// @name         XP Calculator
+// @namespace    XP Calculator
 // @version      1.0.0
 // @description  Script calculates the XP needed for next and/or requested level and displays daily earnings based on level
-// @author       Jaxx (https://github.com/its-Jaxx/HypeDrop-XP-Calculator/issues)
+// @author       Jaxx
 // @supportURL   https://discord.com/users/922843169480122388/
 // @match        https://www.hypedrop.com/en/player/*/summary
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=hypedrop.com
@@ -16,13 +16,21 @@
 
 (function() {
     'use strict';
-    const lvlarray = [0, 12800, 25600, 38400, 51200, 64000, 76800, 89600, 102400, 115200, 148380, 181560, 214740, 247920, 281100, 314280, 347460, 380640, 413820, 447000, 501800, 594522, 687244, 779966, 872688, 965411, 1058133, 1150855, 12435777, 1336300, 1574910, 1813520, 2052130, 2290740, 2529350, 2767960, 3006570, 3245180, 3483790, 3722400, 4363490, 5004580, 5645670, 6286760, 6927850, 7568940, 8210030, 8851120, 9492210, 10133300, 11857390, 13581480, 15305570, 17029660, 18753750, 20477840, 22201930, 23926020, 25650110, 27374200, 32013050, 36651900, 41290750, 45929600, 50568450, 55207300, 59846150, 64485000, 69123850, 73762700, 86247110, 98731520, 111215930, 123700340, 136184750, 148669160, 161153570, 173637980, 186122390, 198606800, 232209440, 265812080, 299414720, 333017360, 366620000, 400222640, 433825280, 467427920, 501030560, 534633200, 625081480, 715529760, 805978040, 896426320, 986874600, 1077322880, 1167771160, 1258219440, 1348667720, 1439116000];
+    let lvlarray = [];
     let desired_level = 0;
-
     const earnings_levels = [2, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-    const earnings_amounts = [0.01, 0.01, 0.05, 0.15, 0.24, 0.31, 0.60, 1.85, 4.70, 15.00, 39.00];
+    const earnings_amounts = [0.01, 0.01, 0.05, 0.15, 0.24, 0.31 ,0.60, 1.85, 4.70, 15.00, 39.00];
 
-    const codes = ["JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX", "JAXX"];
+    fetch("https://raw.githubusercontent.com/its-Jaxx/HypeDrop-XP-Calculator/main/lvl_experience.json")
+        .then(response => response.json())
+        .then(data => {
+            lvlarray = Object.values(data.Levels).map(level => level.experience_points);
+        })
+        .catch(error => {
+            console.error('Error fetching the level experience data:', error);
+        });
+
+    const codes = ["JAXX", "JAXX", "JAXX"];
     let rand = 0;
     let code = codes[rand];
 
@@ -43,7 +51,7 @@
     setInterval(() => {
         const xp_bar = document.querySelectorAll(".xp-text");
         const profile = document.querySelectorAll(".profile");
-        if (!xp_bar || !profile) {
+        if (xp_bar.length === 0 || profile.length === 0) {
             return;
         }
         let result = [];
@@ -286,7 +294,7 @@
                     Progress to ${lvl + 1} level: ${xp_current.toLocaleString()} / ${lvlarray[lvl].toLocaleString()} - ${percent}%<br>Need to wager ${wager_fornext.toLocaleString()} credits more
                 </div>
                 <div style="margin-top: 10px;font-size:1rem;color:#fff;">
-                    USE CODE <input type="text" value="${code}" readonly style="text-align: center;font-weight: 600;border:none!important; background-color: #1f2643;color: #0ec555;width:8ch;"> for +5% deposit bonus
+                    USE CODE <input type="text" value="${code}" readonly style="text-align: center;font-weight: 600;border:none!important; background-color: #1f2643;color: #0ec514;width:8ch;"> for +5% deposit bonus
                 </div>
             </div>`;
 
@@ -294,8 +302,8 @@
         let xpcalc_level_input = document.getElementById("xpcalc-level-input");
         if (!xpcalc_input) {
             xpcalc_level_input.innerHTML = `
-                <input type="number" id="xpcalc-level" style="background: #1e2127;color: #fff;border: 1px #000 !important;padding: 0.8rem;border-radius: 10px;">
-                <div style="position: absolute;top: 10px;background: #262a30;">Desired level</div>`;
+                <input type="number" id="xpcalc-level" style="background: #1c2342;color: #fff;border: 1px #000 !important;padding: 0.8rem;border-radius: 10px;">
+                <div style="position: absolute;top: 10px;background: #1c2342;">Desired level</div>`;
         }
         calc();
     }, 2000);
