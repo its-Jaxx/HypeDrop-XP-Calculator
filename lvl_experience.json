@@ -1,1 +1,307 @@
-// Will add experience points shortly!
+{
+    "Levels": {
+        "level0": {
+            "experience_points": 0
+        },
+        "level1": {
+            "experience_points": 0
+        },
+        "level2": {
+            "experience_points": 8300
+        },
+        "level3": {
+            "experience_points": 16009
+        },
+        "level4": {
+            "experience_points": 25830
+        },
+        "level5": {
+            "experience_points": 37513
+        },
+        "level6": {
+            "experience_points": 50812
+        },
+        "level7": {
+            "experience_points": 65478
+        },
+        "level8": {
+            "experience_points": 81263
+        },
+        "level9": {
+            "experience_points": 97919
+        },
+        "level10": {
+            "experience_points": 115200
+        },
+        "level11": {
+            "experience_points": 134543
+        },
+        "level12": {
+            "experience_points": 157347
+        },
+        "level13": {
+            "experience_points": 183300
+        },
+        "level14": {
+            "experience_points": 212321
+        },
+        "level15": {
+            "experience_points": 244451
+        },
+        "level16": {
+            "experience_points": 279555
+        },
+        "level17": {
+            "experience_points": 317496
+        },
+        "level18": {
+            "experience_points": 358141
+        },
+        "level19": {
+            "experience_points": 401354
+        },
+        "level20": {
+            "experience_points": 447000
+        },
+        "level21": {
+            "experience_points": 501800
+        },
+        "level22": {
+            "experience_points": 568266
+        },
+        "level23": {
+            "experience_points": 639301
+        },
+        "level24": {
+            "experience_points": 715758
+        },
+        "level25": {
+            "experience_points": 798495
+        },
+        "level26": {
+            "experience_points": 888366
+        },
+        "level27": {
+            "experience_points": 986228
+        },
+        "level28": {
+            "experience_points": 1092937
+        },
+        "level29": {
+            "experience_points": 1209712
+        },
+        "level30": {
+            "experience_points": 1336300
+        },
+        "level31": {
+            "experience_points": 1474170
+        },
+        "level32": {
+            "experience_points": 1624690
+        },
+        "level33": {
+            "experience_points": 1789230
+        },
+        "level34": {
+            "experience_points": 1969159
+        },
+        "level35": {
+            "experience_points": 2165846
+        },
+        "level36": {
+            "experience_points": 2380660
+        },
+        "level37": {
+            "experience_points": 2614970
+        },
+        "level38": {
+            "experience_points": 2870145
+        },
+        "level39": {
+            "experience_points": 3147553
+        },
+        "level40": {
+            "experience_points": 3448553
+        },
+        "level41": {
+            "experience_points": 3782679
+        },
+        "level42": {
+            "experience_points": 4150957
+        },
+        "level43": {
+            "experience_points": 4554807
+        },
+        "level44": {
+            "experience_points": 4995636
+        },
+        "level45": {
+            "experience_points": 5474844
+        },
+        "level46": {
+            "experience_points": 5993821
+        },
+        "level47": {
+            "experience_points": 6553965
+        },
+        "level48": {
+            "experience_points": 7156666
+        },
+        "level49": {
+            "experience_points": 7803314
+        },
+        "level50": {
+            "experience_points": 8495297
+        },
+        "level51": {
+            "experience_points": 9244006
+        },
+        "level52": {
+            "experience_points": 10051630
+        },
+        "level53": {
+            "experience_points": 10919860
+        },
+        "level54": {
+            "experience_points": 11839386
+        },
+        "level55": {
+            "experience_points": 12812873
+        },
+        "level56": {
+            "experience_points": 13842990
+        },
+        "level57": {
+            "experience_points": 14932405
+        },
+        "level58": {
+            "experience_points": 16083788
+        },
+        "level59": {
+            "experience_points": 17299808
+        },
+        "level60": {
+            "experience_points": 18583134
+        },
+        "level61": {
+            "experience_points": 19936435
+        },
+        "level62": {
+            "experience_points": 21362371
+        },
+        "level63": {
+            "experience_points": 22863600
+        },
+        "level64": {
+            "experience_points": 24442793
+        },
+        "level65": {
+            "experience_points": 26102618
+        },
+        "level66": {
+            "experience_points": 27845735
+        },
+        "level67": {
+            "experience_points": 29674804
+        },
+        "level68": {
+            "experience_points": 31592483
+        },
+        "level69": {
+            "experience_points": 33601432
+        },
+        "level70": {
+            "experience_points": 35704311
+        },
+        "level71": {
+            "experience_points": 37903779
+        },
+        "level72": {
+            "experience_points": 40202495
+        },
+        "level73": {
+            "experience_points": 42603119
+        },
+        "level74": {
+            "experience_points": 45108309
+        },
+        "level75": {
+            "experience_points": 47720731
+        },
+        "level76": {
+            "experience_points": 50443055
+        },
+        "level77": {
+            "experience_points": 53277948
+        },
+        "level78": {
+            "experience_points": 162920000
+        },
+        "level79": {
+            "experience_points": 179880800
+        },
+        "level80": {
+            "experience_points": 198606800
+        },
+        "level81": {
+            "experience_points": 221683981
+        },
+        "level82": {
+            "experience_points": 246441795
+        },
+        "level83": {
+            "experience_points": 273127125
+        },
+        "level84": {
+            "experience_points": 301986856
+        },
+        "level85": {
+            "experience_points": 333267873
+        },
+        "level86": {
+            "experience_points": 367217060
+        },
+        "level87": {
+            "experience_points": 404081301
+        },
+        "level88": {
+            "experience_points": 444107482
+        },
+        "level89": {
+            "experience_points": 487542487
+        },
+        "level90": {
+            "experience_points": 534633200
+        },
+        "level91": {
+            "experience_points": 588951017
+        },
+        "level92": {
+            "experience_points": 653381762
+        },
+        "level93": {
+            "experience_points": 727143958
+        },
+        "level94": {
+            "experience_points": 809456130
+        },
+        "level95": {
+            "experience_points": 899536802
+        },
+        "level96": {
+            "experience_points": 996604497
+        },
+        "level97": {
+            "experience_points": 1099877741
+        },
+        "level98": {
+            "experience_points": 1208575056
+        },
+        "level99": {
+            "experience_points": 1321914968
+        },
+        "level100": {
+            "experience_points": 1439116000
+        }
+    }
+}
