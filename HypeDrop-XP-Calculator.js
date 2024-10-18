@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         XP Calculator
-// @namespace    XP Calculator
+// @name         HypeDrop XP Calculator
+// @namespace    HypeDrop XP Calculator
 // @version      1.0.0
 // @description  Script calculates the XP needed for next and/or requested level and displays daily earnings based on level
 // @author       Jaxx
