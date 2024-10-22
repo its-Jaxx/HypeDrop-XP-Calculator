@@ -1,13 +1,13 @@
 {
     "Levels": {
         "level0": {
-            "experience_points": 0 // Confirmed
+            "experience_points": 0
         },
         "level1": {
-            "experience_points": 0 // Confirmed
+            "experience_points": 0
         },
         "level2": {
-            "experience_points": 8300 // Confirmed
+            "experience_points": 8300
         },
         "level3": {
             "experience_points": 16009
@@ -31,7 +31,7 @@
             "experience_points": 97919
         },
         "level10": {
-            "experience_points": 115200 // Confirmed
+            "experience_points": 115200
         },
         "level11": {
             "experience_points": 134543
@@ -61,10 +61,10 @@
             "experience_points": 401354
         },
         "level20": {
-            "experience_points": 447000 // Confirmed
+            "experience_points": 447000
         },
         "level21": {
-            "experience_points": 501800 // Confirmed
+            "experience_points": 501800
         },
         "level22": {
             "experience_points": 568266
@@ -91,7 +91,7 @@
             "experience_points": 1209712
         },
         "level30": {
-            "experience_points": 1336300 // Confirmed
+            "experience_points": 1336300
         },
         "level31": {
             "experience_points": 1474170
@@ -121,7 +121,7 @@
             "experience_points": 3147553
         },
         "level40": {
-            "experience_points": 3448553 // Confirmed
+            "experience_points": 3448553
         },
         "level41": {
             "experience_points": 3782679
@@ -151,7 +151,7 @@
             "experience_points": 7803314
         },
         "level50": {
-            "experience_points": 8495297 // Confirmed
+            "experience_points": 8495297
         },
         "level51": {
             "experience_points": 9244006
@@ -181,7 +181,7 @@
             "experience_points": 17299808
         },
         "level60": {
-            "experience_points": 18583134 // Confirmed
+            "experience_points": 18583134
         },
         "level61": {
             "experience_points": 19936435
@@ -211,7 +211,7 @@
             "experience_points": 33601432
         },
         "level70": {
-            "experience_points": 35704311 // Confirmed
+            "experience_points": 35704311
         },
         "level71": {
             "experience_points": 37903779
@@ -241,7 +241,7 @@
             "experience_points": 179880800
         },
         "level80": {
-            "experience_points": 198606800 // Confirmed
+            "experience_points": 198606800
         },
         "level81": {
             "experience_points": 221683981
@@ -271,7 +271,7 @@
             "experience_points": 487542487
         },
         "level90": {
-            "experience_points": 534633200 // Confirmed
+            "experience_points": 534633200
         },
         "level91": {
             "experience_points": 588951017
@@ -301,7 +301,7 @@
             "experience_points": 1321914968
         },
         "level100": {
-            "experience_points": 1439116000 // Confirmed
+            "experience_points": 1439116000
         }
     }
 }
