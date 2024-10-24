@@ -8,7 +8,6 @@
 // @match        https://www.hypedrop.com/en/player/*/summary
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=hypedrop.com
 // @grant        none
-// @run-at       document-start
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
 // @license      WTFPL
 // ==/UserScript==
@@ -16,15 +15,20 @@
 
 (function() {
     'use strict';
+
     let lvlarray = [];
     let desired_level = 0;
     const earnings_levels = [2, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
     const earnings_amounts = [0.01, 0.01, 0.05, 0.15, 0.24, 0.31 ,0.60, 1.85, 4.70, 15.00, 39.00];
 
+    // Fetch level experience data with 'comment' field
     fetch("https://raw.githubusercontent.com/its-Jaxx/HypeDrop-XP-Calculator/main/lvl_experience.json")
         .then(response => response.json())
         .then(data => {
-            lvlarray = Object.values(data.Levels).map(level => level.experience_points);
+            lvlarray = Object.values(data.Levels).map(level => ({
+                experience_points: level.experience_points,
+                comment: level.comment
+            }));
         })
         .catch(error => {
             console.error('Error fetching the level experience data:', error);
@@ -51,7 +55,7 @@
     setInterval(() => {
         const xp_bar = document.querySelectorAll(".xp-text");
         const profile = document.querySelectorAll(".profile");
-        if (xp_bar.length === 0 || profile.length === 0) {
+        if (xp_bar.length === 0 || profile.length === 0 || lvlarray.length === 0) {
             return;
         }
         let result = [];
@@ -68,19 +72,19 @@
 
         let lvl = 0;
         for (let i = 0; i < lvlarray.length; i++) {
-            if (xp_current >= lvlarray[i]) {
+            if (xp_current >= lvlarray[i].experience_points) {
                 lvl++;
             }
         }
         const total_wagered = xp_current / 400;
-        let xp_fornext = lvlarray[lvl] - xp_current;
-        let wager_fornext = (lvlarray[lvl] / 400) - total_wagered;
+        let xp_fornext = lvlarray[lvl].experience_points - xp_current;
+        let wager_fornext = (lvlarray[lvl].experience_points / 400) - total_wagered;
         wager_fornext = Math.round(wager_fornext * 100) / 100;
-        let percent = (100 * (lvlarray[lvl] - xp_current)) / (lvlarray[lvl] - lvlarray[lvl - 1]);
+        let percent = (100 * (lvlarray[lvl].experience_points - xp_current)) / (lvlarray[lvl].experience_points - lvlarray[lvl - 1].experience_points);
         percent = 100 - (Math.round(percent * 100) / 100);
         percent = Math.round(percent * 100) / 100;
 
-        let xp_fordesired = lvlarray[desired_level - 1];
+        let xp_fordesired = lvlarray[desired_level - 1]?.experience_points || 0;
         let wager_fordesired = xp_fordesired / 400;
 
         let xp_needed = xp_fordesired - xp_current;
@@ -144,6 +148,10 @@
             cases_needed = "Reached!";
             cost_needed = "Reached!";
         }
+
+        // Get the status (Confirmed/Unconfirmed) for current and desired levels
+        let status_next = lvlarray[lvl] ? lvlarray[lvl].comment : "Unknown";
+        let status_desired = lvlarray[desired_level - 1] ? lvlarray[desired_level - 1].comment : "Unknown";
 
         let xpcalc = document.getElementById("xpcalc-net");
         if (!xpcalc) {
@@ -247,6 +255,10 @@
                         <td>Case strat for next:</td>
                         <td style="color: #bcbebf;">Open ${cases_fornext.toLocaleString()} cases (Expected net loss: ${cost_fornext.toFixed(2)} credits)</td>
                     </tr>
+                    <tr>
+                        <td>Level status:</td>
+                        <td style="color: #bcbebf;">${status_next}</td>
+                    </tr>
                 </table>
             </div>`;
 
@@ -283,6 +295,10 @@
                             <td>Case strat for desired:</td>
                             <td style="color: #bcbebf;">Open ${cases_needed} cases (Expected net loss: ${cost_needed === "Reached!" ? "Reached!" : cost_needed.toFixed(2) + " credits"})</td>
                         </tr>
+                        <tr>
+                            <td>Level status:</td>
+                            <td style="color: #bcbebf;">${status_desired}</td>
+                        </tr>
                     </table>
                 </div>`;
             xpcalc_info.innerHTML += desired_level_text;
@@ -291,7 +307,7 @@
         xpcalc_info.innerHTML += `
             <div style="display:flex; flex-direction: column; gap: .7rem; align-items: center;">
                 <div id="progress" style="text-align: center;font-size: .7rem;border-radius: 10px;padding: 1rem; width: 100%;background: linear-gradient(90deg, ${l_color} ${percent}%, rgba(30,33,39,1) ${percent}%); color: #fff;text-shadow: 1px 1px 6px black;">
-                    Progress to ${lvl + 1} level: ${xp_current.toLocaleString()} / ${lvlarray[lvl].toLocaleString()} - ${percent}%<br>Need to wager ${wager_fornext.toLocaleString()} credits more
+                    Progress to ${lvl + 1} level: ${xp_current.toLocaleString()} / ${lvlarray[lvl].experience_points.toLocaleString()} - ${percent}%<br>Need to wager ${wager_fornext.toLocaleString()} credits more
                 </div>
                 <div style="margin-top: 10px;font-size:1rem;color:#fff;">
                     USE CODE <input type="text" value="${code}" readonly style="text-align: center;font-weight: 600;border:none!important; background-color: #1f2643;color: #0ec514;width:8ch;"> for +5% deposit bonus
