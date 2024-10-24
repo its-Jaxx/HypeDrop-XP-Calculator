@@ -88,7 +88,7 @@
 
 * level31 - unconfirmed
 * level32 - unconfirmed
-* level33 - unconfirmed
+* level33 - confirmed
 * level34 - unconfirmed
 * level35 - unconfirmed
 * level36 - unconfirmed
@@ -103,11 +103,11 @@
 <summary>Level 41-50</summary>
 
 * level41 - unconfirmed
-* level42 - unconfirmed
-* level43 - unconfirmed
+* level42 - confirmed
+* level43 - confirmed
 * level44 - unconfirmed
 * level45 - unconfirmed
-* level46 - unconfirmed
+* level46 - confirmed
 * level47 - unconfirmed
 * level48 - unconfirmed
 * level49 - unconfirmed
@@ -118,7 +118,7 @@
 <details>
 <summary>Level 51-60</summary>
 
-* level51 - unconfirmed
+* level51 - confirmed
 * level52 - unconfirmed
 * level53 - unconfirmed
 * level54 - unconfirmed
@@ -126,7 +126,7 @@
 * level56 - unconfirmed
 * level57 - unconfirmed
 * level58 - unconfirmed
-* level59 - unconfirmed
+* level59 - confirmed
 * level60 - confirmed
 
 </details>
@@ -134,9 +134,9 @@
 <details>
 <summary>Level 61-70</summary>
 
-* level61 - unconfirmed
+* level61 - confirmed
 * level62 - unconfirmed
-* level63 - unconfirmed
+* level63 - confirmed
 * level64 - unconfirmed
 * level65 - unconfirmed
 * level66 - unconfirmed
