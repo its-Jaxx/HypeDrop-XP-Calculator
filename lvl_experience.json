@@ -1,307 +1,408 @@
 {
     "Levels": {
         "level0": {
-            "experience_points": 0
+            "experience_points": 0,
+            "comment": "Confirmed"
         },
         "level1": {
-            "experience_points": 0
+            "experience_points": 0,
+            "comment": "Confirmed"
         },
         "level2": {
-            "experience_points": 8300
+            "experience_points": 8300,
+            "comment": "Confirmed"
         },
         "level3": {
-            "experience_points": 16009
+            "experience_points": 16009,
+            "comment": "Unconfirmed"
         },
         "level4": {
-            "experience_points": 25830
+            "experience_points": 25830,
+            "comment": "Unconfirmed"
         },
         "level5": {
-            "experience_points": 37513
+            "experience_points": 37513,
+            "comment": "Unconfirmed"
         },
         "level6": {
-            "experience_points": 50812
+            "experience_points": 50812,
+            "comment": "Unconfirmed"
         },
         "level7": {
-            "experience_points": 65478
+            "experience_points": 65478,
+            "comment": "Unconfirmed"
         },
         "level8": {
-            "experience_points": 81263
+            "experience_points": 81263,
+            "comment": "Unconfirmed"
         },
         "level9": {
-            "experience_points": 97919
+            "experience_points": 97919,
+            "comment": "Unconfirmed"
         },
         "level10": {
-            "experience_points": 115200
+            "experience_points": 115200,
+            "comment": "Unconfirmed"
         },
         "level11": {
-            "experience_points": 134543
+            "experience_points": 134543,
+            "comment": "Unconfirmed"
         },
         "level12": {
-            "experience_points": 157347
+            "experience_points": 157347,
+            "comment": "Unconfirmed"
         },
         "level13": {
-            "experience_points": 183300
+            "experience_points": 183300,
+            "comment": "Unconfirmed"
         },
         "level14": {
-            "experience_points": 212321
+            "experience_points": 210700,
+            "comment": "Confirmed"
         },
         "level15": {
-            "experience_points": 244451
+            "experience_points": 244451,
+            "comment": "Unconfirmed"
         },
         "level16": {
-            "experience_points": 279555
+            "experience_points": 279555,
+            "comment": "Unconfirmed"
         },
         "level17": {
-            "experience_points": 317496
+            "experience_points": 317496,
+            "comment": "Unconfirmed"
         },
         "level18": {
-            "experience_points": 358141
+            "experience_points": 358141,
+            "comment": "Unconfirmed"
         },
         "level19": {
-            "experience_points": 401354
+            "experience_points": 401354,
+            "comment": "Unconfirmed"
         },
         "level20": {
-            "experience_points": 447000
+            "experience_points": 447000,
+            "comment": "Unconfirmed"
         },
         "level21": {
-            "experience_points": 501800
+            "experience_points": 501800,
+            "comment": "Confirmed"
         },
         "level22": {
-            "experience_points": 568266
+            "experience_points": 568266,
+            "comment": "Unconfirmed"
         },
         "level23": {
-            "experience_points": 639301
+            "experience_points": 639301,
+            "comment": "Unconfirmed"
         },
         "level24": {
-            "experience_points": 715758
+            "experience_points": 702800,
+            "comment": "Confirmed"
         },
         "level25": {
-            "experience_points": 798495
+            "experience_points": 798495,
+            "comment": "Unconfirmed"
         },
         "level26": {
-            "experience_points": 888366
+            "experience_points": 888366,
+            "comment": "Unconfirmed"
         },
         "level27": {
-            "experience_points": 986228
+            "experience_points": 986228,
+            "comment": "Unconfirmed"
         },
         "level28": {
-            "experience_points": 1092937
+            "experience_points": 1092937,
+            "comment": "Unconfirmed"
         },
         "level29": {
-            "experience_points": 1209712
+            "experience_points": 1209712,
+            "comment": "Unconfirmed"
         },
         "level30": {
-            "experience_points": 1336300
+            "experience_points": 1336300,
+            "comment": "Unconfirmed"
         },
         "level31": {
-            "experience_points": 1474170
+            "experience_points": 1474170,
+            "comment": "Unconfirmed"
         },
         "level32": {
-            "experience_points": 1624690
+            "experience_points": 1624690,
+            "comment": "Unconfirmed"
         },
         "level33": {
-            "experience_points": 1824700
+            "experience_points": 1824700,
+            "comment": "Confirmed"
         },
         "level34": {
-            "experience_points": 1969159
+            "experience_points": 1969159,
+            "comment": "Unconfirmed"
         },
         "level35": {
-            "experience_points": 2165846
+            "experience_points": 2165846,
+            "comment": "Unconfirmed"
         },
         "level36": {
-            "experience_points": 2380660
+            "experience_points": 2380660,
+            "comment": "Unconfirmed"
         },
         "level37": {
-            "experience_points": 2614970
+            "experience_points": 2614970,
+            "comment": "Unconfirmed"
         },
         "level38": {
-            "experience_points": 2870145
+            "experience_points": 2870145,
+            "comment": "Unconfirmed"
         },
         "level39": {
-            "experience_points": 3147553
+            "experience_points": 3147553,
+            "comment": "Unconfirmed"
         },
         "level40": {
-            "experience_points": 3448553
+            "experience_points": 3722400,
+            "comment": "Confirmed"
         },
         "level41": {
-            "experience_points": 3782679
+            "experience_points": 3782679,
+            "comment": "Unconfirmed"
         },
         "level42": {
-            "experience_points": 4552900
+            "experience_points": 4552900,
+            "comment": "Confirmed"
         },
         "level43": {
-            "experience_points": 5564900
+            "experience_points": 5564900,
+            "comment": "Confirmed"
         },
         "level44": {
-            "experience_points": 4995636
+            "experience_points": 4995636,
+            "comment": "Unconfirmed"
         },
         "level45": {
-            "experience_points": 5474844
+            "experience_points": 5474844,
+            "comment": "Unconfirmed"
         },
         "level46": {
-            "experience_points": 6798300
+            "experience_points": 6798300,
+            "comment": "Confirmed"
         },
         "level47": {
-            "experience_points": 6553965
+            "experience_points": 6553965,
+            "comment": "Unconfirmed"
         },
         "level48": {
-            "experience_points": 7156666
+            "experience_points": 7156666,
+            "comment": "Unconfirmed"
         },
         "level49": {
-            "experience_points": 7803314
+            "experience_points": 7803314,
+            "comment": "Unconfirmed"
         },
         "level50": {
-            "experience_points": 8495297
+            "experience_points": 8495297,
+            "comment": "Unconfirmed"
         },
         "level51": {
-            "experience_points": 11194500
+            "experience_points": 11194500,
+            "comment": "Confirmed"
         },
         "level52": {
-            "experience_points": 10051630
+            "experience_points": 10051630,
+            "comment": "Unconfirmed"
         },
         "level53": {
-            "experience_points": 10919860
+            "experience_points": 10919860,
+            "comment": "Unconfirmed"
         },
         "level54": {
-            "experience_points": 11839386
+            "experience_points": 15087200,
+            "comment": "Confirmed"
         },
         "level55": {
-            "experience_points": 12812873
+            "experience_points": 12812873,
+            "comment": "Unconfirmed"
         },
         "level56": {
-            "experience_points": 13842990
+            "experience_points": 13842990,
+            "comment": "Unconfirmed"
         },
         "level57": {
-            "experience_points": 14932405
+            "experience_points": 14932405,
+            "comment": "Unconfirmed"
         },
         "level58": {
-            "experience_points": 16083788
+            "experience_points": 16083788,
+            "comment": "Unconfirmed"
         },
         "level59": {
-            "experience_points": 24788600
+            "experience_points": 24788600,
+            "comment": "Confirmed"
         },
         "level60": {
-            "experience_points": 18583134
+            "experience_points": 18583134,
+            "comment": "Unconfirmed"
         },
         "level61": {
-            "experience_points": 30228800
+            "experience_points": 30228800,
+            "comment": "Confirmed"
         },
         "level62": {
-            "experience_points": 21362371
+            "experience_points": 21362371,
+            "comment": "Unconfirmed"
         },
         "level63": {
-            "experience_points": 36859900
+            "experience_points": 36859900,
+            "comment": "Confirmed"
         },
         "level64": {
-            "experience_points": 24442793
+            "experience_points": 24442793,
+            "comment": "Unconfirmed"
         },
         "level65": {
-            "experience_points": 26102618
+            "experience_points": 44942800,
+            "comment": "Confirmed"
         },
         "level66": {
-            "experience_points": 27845735
+            "experience_points": 27845735,
+            "comment": "Unconfirmed"
         },
         "level67": {
-            "experience_points": 29674804
+            "experience_points": 29674804,
+            "comment": "Unconfirmed"
         },
         "level68": {
-            "experience_points": 31592483
+            "experience_points": 31592483,
+            "comment": "Unconfirmed"
         },
         "level69": {
-            "experience_points": 33601432
+            "experience_points": 66805100,
+            "comment": "Confirmed"
         },
         "level70": {
-            "experience_points": 35704311
+            "experience_points": 35704311,
+            "comment": "Unconfirmed"
         },
         "level71": {
-            "experience_points": 37903779
+            "experience_points": 37903779,
+            "comment": "Unconfirmed"
         },
         "level72": {
-            "experience_points": 40202495
+            "experience_points": 40202495,
+            "comment": "Unconfirmed"
         },
         "level73": {
-            "experience_points": 42603119
+            "experience_points": 42603119,
+            "comment": "Unconfirmed"
         },
         "level74": {
-            "experience_points": 45108309
+            "experience_points": 45108309,
+            "comment": "Unconfirmed"
         },
         "level75": {
-            "experience_points": 47720731
+            "experience_points": 47720731,
+            "comment": "Unconfirmed"
         },
         "level76": {
-            "experience_points": 50443055
+            "experience_points": 50443055,
+            "comment": "Unconfirmed"
         },
         "level77": {
-            "experience_points": 53277948
+            "experience_points": 53277948,
+            "comment": "Unconfirmed"
         },
         "level78": {
-            "experience_points": 162920000
+            "experience_points": 162920000,
+            "comment": "Unconfirmed"
         },
         "level79": {
-            "experience_points": 179880800
+            "experience_points": 179880800,
+            "comment": "Unconfirmed"
         },
         "level80": {
-            "experience_points": 198606800
+            "experience_points": 198606800,
+            "comment": "Unconfirmed"
         },
         "level81": {
-            "experience_points": 221683981
+            "experience_points": 221683981,
+            "comment": "Unconfirmed"
         },
         "level82": {
-            "experience_points": 246441795
+            "experience_points": 246441795,
+            "comment": "Unconfirmed"
         },
         "level83": {
-            "experience_points": 273127125
+            "experience_points": 273127125,
+            "comment": "Unconfirmed"
         },
         "level84": {
-            "experience_points": 301986856
+            "experience_points": 301986856,
+            "comment": "Unconfirmed"
         },
         "level85": {
-            "experience_points": 333267873
+            "experience_points": 333267873,
+            "comment": "Unconfirmed"
         },
         "level86": {
-            "experience_points": 367217060
+            "experience_points": 367217060,
+            "comment": "Unconfirmed"
         },
         "level87": {
-            "experience_points": 404081301
+            "experience_points": 404081301,
+            "comment": "Unconfirmed"
         },
         "level88": {
-            "experience_points": 444107482
+            "experience_points": 444107482,
+            "comment": "Unconfirmed"
         },
         "level89": {
-            "experience_points": 487542487
+            "experience_points": 487542487,
+            "comment": "Unconfirmed"
         },
         "level90": {
-            "experience_points": 534633200
+            "experience_points": 534633200,
+            "comment": "Unconfirmed"
         },
         "level91": {
-            "experience_points": 588951017
+            "experience_points": 588951017,
+            "comment": "Unconfirmed"
         },
         "level92": {
-            "experience_points": 653381762
+            "experience_points": 653381762,
+            "comment": "Unconfirmed"
         },
         "level93": {
-            "experience_points": 727143958
+            "experience_points": 727143958,
+            "comment": "Unconfirmed"
         },
         "level94": {
-            "experience_points": 809456130
+            "experience_points": 809456130,
+            "comment": "Unconfirmed"
         },
         "level95": {
-            "experience_points": 899536802
+            "experience_points": 877155800,
+            "comment": "Confirmed"
         },
         "level96": {
-            "experience_points": 996604497
+            "experience_points": 996604497,
+            "comment": "Unconfirmed"
         },
         "level97": {
-            "experience_points": 1099877741
+            "experience_points": 1099877741,
+            "comment": "Unconfirmed"
         },
         "level98": {
-            "experience_points": 1208575056
+            "experience_points": 1208575056,
+            "comment": "Unconfirmed"
         },
         "level99": {
-            "experience_points": 1321914968
+            "experience_points": 1321914968,
+            "comment": "Unconfirmed"
         },
         "level100": {
-            "experience_points": 1439116000
+            "experience_points": 1439116000,
+            "comment": "Unconfirmed"
         }
     }
 }
